@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+ body{
+    margin: 0;
+}
+
+header{
+    height: 75px;
+    background-color: #fceeb0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 10px solid #8DBEE1;
+   
+    
+}
+
+h1{
+    font-size: 25px;
+    margin-right: 275px;
+    margin-left: 5px;
+    
+}
+
+img{
+    margin-left: 5px;
+    height: 75px;
+    width: 75px;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+a{
+    margin:15px;
+    font-size: 25px ;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: white;
+    border-bottom: 4px solid black;
+
+}
+ 
+.flexcon1{
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/F112.jpg);
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    align-content: center;
+    justify-content: center;
+
+
+    
+}
+
+.AH2{
+    color: white;
+    font-size: 36px;
+}
+
+h2{
+    padding-top: 5px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p{
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.flexcon2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    
+ 
+    
+}
+
+.child1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 30%;
+    margin-left: 20px;
+
+    
+
+}
+
+.child2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 60%;
+    
+
+}
+.PO{
+    border: 1px solid black;
+    border-radius: 20px;
+    order: 1;
+    align-content: center;
+    text-align: justify;
+    background-color: #E0C2F2;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.JO{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #C4FEFF;
+    padding: 3px;
+    order: 3;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.SO{
+    order: 2;
+    margin-left: 40px;
+    margin-right: 0px;
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+   
+}
+
+.BH2{
+    font-size: 36px;
+}
+
+.so1{
+    text-align: left;
+    font-size: 20px;
+
+}
+
+.li1{
+    font-size: 25px;
+    text-align: justify;
+
+}
+
+.li2{
+    font-size: 25px;
+    text-align: justify;
+}
+
+footer{
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+    background-color: #8DBEE1;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    header {
+      flex-direction: row;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 4px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    .flexcon2 {
+      flex-direction: column;
+    }
+
+    .child1,
+    .child2 {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+      height: 30vw;
+    }
+
+    h1 {
+      margin:5px;
+      margin-right: 0;
+      font-size: 4vw;
+    }
+
+    img{
+        height: 10vw;
+        width: 10vw;
+    }
+
+    nav {
+      margin-top: 5px;
+    }
+
+    a{
+        font-size: 3.5vw;
+    }
+
+    .AH2{
+
+        font-size: 5vw;
+    }
+
+    p{
+        font-size: 4vw;
+    }
+
+    .flexcon1{
+        height: 60vw;
+    }
+
+    h2{
+        font-size: 5vw;
+    }
+
+    .li1, .li2{
+        font-size: 3.5vw;
+    }
+
+
+    .flexcon2 {
+      flex-direction: column;
+    }
+
+    .child1,
+    .child2 {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  .BH2{
+    font-size: 5vw;
+  }
+
+  .so1{
+    font-size: 3.5vw;
+  }
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <img src="./images/LOGO CIT.png" alt="img1">
+        <h1>MMSU - COLLEGE OF INDUSTRIAL TECHNOLOGY</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Description</a>
+            <a href="#">Faculty</a>
+        </nav>
+    </header>
+
+    <div class="flexcon1">
+        <h2 class="AH2">
+            Bachelor of Computer Technology
+        </h2>
+
+        <p>
+            The BCT is a four-year degree program that focuses on the practical aspects of the science of computing. the program is develops core skill in multimedia in technology web mobile development and network/system administration.
+            Furthermore, it prepares learners with supervisory and management skills. The curriculum is derived from the BS Industrial Technology major in Computer Technology with CHED Certificate of Program Complience (COPC) No. 31,
+            series of 2021. 
+        </p>
+    </div>
+
+    <div class="flexcon2">
+
+        <div class="child1">
+            <div class="PO">
+                <h2>Program Objectives</h2>
+                <p>
+                    the program prepares learnes with practical skills in multimedia technology, web development and network/system administration and supervisoral skills to manage an organizationsin these areas of competencies, engage in a start up business or pursue teaching career.
+                </p>
+
+            </div>
+
+            <div class="JO">
+                <h2>Job Oppurtunities</h2>
+
+                <ul>
+                    <li class="li1">Visual Graphics Designer</li>
+                    <li class="li1">Photographer</li>
+                    <li class="li1">Video Editor</li>
+                    <li class="li1">Front-end Web Developer</li>
+                    <li class="li1">Back-end Web Developer</li>
+                    <li class="li1">Full-stack Developer</li>
+                    <li class="li1">System/Network Administrator</li>
+                    <li class="li1">System Maintenance Personel</li>
+                    <li class="li1">System Maintenance Personel</li>
+                    <li class="li1">Teacher/Trainer</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="child2">
+            <div class="SO">
+                <h2 class="BH2">Specific Objectives</h2>
+                <p cl
+                
+                ass="so1">The Learners should be able to:</p>
+                <ol type="1">
+                    <li class="li2">Demonstrate understanding of the importance of being ethical in computing professional when making work-related decisions.</li>
+                    <li class="li2">Decelop products or processes by applying  their knoledge in computer netrwork systems and development of productivity tools.</li>
+                    <li class="li2">Participate as an active member of development service team with leadership roles when appropriate.</li>
+                    <li class="li2">Apply communication skills effectively, promote ideas, goals, processes, or products.</li>
+                    <li class="li2">make positive contributions to the community with skills and abilities learned in the program.</li>
+                    <li class="li2">Pursue lifelong learning por personal and professional growth through varied experiential and field-based oppurtunities.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>&copy 2023 John Carlo Agbayani </footer>
+
+    
+</body>
+</html>
